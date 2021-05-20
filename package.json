@@ -8,10 +8,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "client": "cd client && npm start",
+    "client": "npm start --prefix client",
     "server": "cd server && nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build -prefix client"
   },
   "keywords": [],
   "author": "",
