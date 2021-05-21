@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.slider img {
+  height: 600px;
+  object-fit: contain;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.nav-link {
+  text-transform: capitalize;
+  color: black;
+  font-size: 15px;
+}
+.thumbs-wrapper {
+  visibility: hidden;
+  margin: 0;
+}
+
+.carausel .slide .legend {
+  position: absolute !important;
+}
+.row .new-arrival {
+  margin-top: -100px !important;
+}
+h5 > .rating-modal {
+  margin-top: -35px !important;
+}
+
+.carausel-status {
+  visibility: hidden;
+}
